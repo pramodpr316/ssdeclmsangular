@@ -9,6 +9,8 @@ export class AdminComponent implements OnInit {
 
   constructor() { }
 
+  authorServicesTitle = "Author Services"
+
   ngOnInit() {
   }
 

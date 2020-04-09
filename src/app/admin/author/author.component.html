@@ -1,3 +1,25 @@
-<p>
-  author works!
-</p>
+<hr class="featurette-divider">
+<hr class="featurette-divider">
+<hr class="featurette-divider">
+
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Author Name</th>
+      <th scope="col">Books Written</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of authors; let i=index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{a.authorName}}</td>
+      <td></td>
+      <td><button type="button" class="btn btn-primary">Edit</button></td>
+      <td><button type="button" class="btn btn-danger">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
